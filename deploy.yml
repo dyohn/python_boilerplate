@@ -1,0 +1,17 @@
+# Docker Compose config version
+version: "3.7"
+
+# Global service declarations
+x-base-service: &base-service
+  env_file: deploy.env
+  restart: on-failure
+
+# Service defintiions
+services:
+  my_service:
+    <<: *base-service
+    build: build_path_for_my_service
+    privileged: true
+    cap_add:
+      - SYS_ADMIN
+      - NET_ADMIN

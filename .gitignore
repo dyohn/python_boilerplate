@@ -1,0 +1,45 @@
+# Python files
+*.pyc
+
+# Editor files
+.vscode
+.idea
+
+# Virtualenv
+.venv
+
+# Build files
+dist.zip
+dist/
+bin.zip
+# bin/ -- don't ignore, keep .jar's in vsc
+
+# Environment
+.env
+*.env
+
+# Secrets
+secrets.cfg
+
+# Pip requirements
+# requirements.txt
+# requirements-dev.txt
+
+# Ignore data files
+data
+volumes
+
+# These files are copied in from elsewhere
+docker/airflow/dags
+docker/airflow/src
+
+
+ssh.exe.stackdump
+
+data/*
+
+node_modules
+
+# developer todo list files
+*TODO*
+*FIXME*
